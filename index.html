@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f516.png"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="text-center display-2 fw-bold pb-2 mb-0 my-4"> Debo Bookmarker
+        <i class="fa-solid fa-mobile text-danger"></i>
+      </h1>
+    </header>
+    <main>
+        <section class="container">
+            <label for="name" class="d-inline-block"> name : </label>
+            <input
+              type="text"
+              id="name"
+              class="form-control mb-2 d-inline-block"
+              name="name"
+              placeholder=" Name"   
+            />
+            <label for="url" class="d-inline-block"> phone : </label>
+            <input
+              type="text"
+              class="form-control mb-2 d-inline-block"
+              id="phone"
+              name="phone"
+              placeholder="phone Number"
+            />
+            <div class="text-center align-self-center">
+              <button
+                onclick="addBookmark()"
+                id="btnAdd"
+                class="btn btn-outline-dark w-100 mt-2"
+              >
+                +Add Contact
+              </button>
+            </div>
+        </section>
+        <section class="container">
+           
+            <div class="table">
+                <table class="table table-striped text-center">
+                    <thead class="table-light">
+                    <tr>
+                        <th>Index</th>
+                        <th>Contact Name</th>
+                        <th>Phone Number</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="bookmarkList">
+                    <!-- Bookmark items will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+</section>
+    </main>
+    <footer>
+        <p class="text-center fs-4 text-secondary">
+            ................................................................................................
+        </p>
+        <p class="text-center fs-5 text-secondary">
+            Made with <i class="fa-solid fa-heart text-danger"></i> by Debo
+        </p>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
